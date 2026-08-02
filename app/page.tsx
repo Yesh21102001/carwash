@@ -6,8 +6,8 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="shrink-0">
-              <h1 className="text-3xl font-black text-red-600 dark:text-red-500 italic">
-                LUXURY
+              <h1 className="text-2xl font-black text-red-600 dark:text-red-500 italic">
+                Vijaya Ganapathi Carwash
               </h1>
             </div>
             <nav className="hidden md:flex gap-8">
@@ -33,11 +33,11 @@ export default function Home() {
         <section className="relative w-full h-screen md:h-screen sm:h-96 flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0">
             <img
-              src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1200&h=800&fit=crop"
+              src="/333.jpg"
               alt="Car washing"
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-black/50"></div>
+            <div className="absolute inset-0 bg-black/70"></div>
           </div>
 
           <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-12 sm:py-0">
@@ -89,8 +89,8 @@ export default function Home() {
             <h4 className="text-2xl sm:text-3xl font-black text-red-600 dark:text-red-500 mb-6 sm:mb-8">🚗 CAR WASH</h4>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
               {[
-                { name: 'Exterior Wash', desc: 'Full body wash with foam & rinse', img: 'https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=600&h=400&fit=crop' },
-                { name: 'Interior Cleaning', desc: 'Vacuum & interior detailing', img: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=600&h=400&fit=crop' },
+                { name: 'Exterior Wash', desc: 'Full body wash with foam & rinse', img: '/man-wash-car-using-shampoo.jpg' },
+                { name: 'Interior Cleaning', desc: 'Vacuum & interior detailing', img: '/car-wash-detailing-station.jpg' },
                 { name: 'Wax & Polish', desc: 'Premium shine & protection', img: 'https://images.unsplash.com/photo-1552820728-7aae4d834744?w=600&h=400&fit=crop' },
                 { name: 'Full Detail', desc: 'Complete care inside & out', img: 'https://images.unsplash.com/photo-1553471459-d2229ba7433b?w=600&h=400&fit=crop' },
               ].map((service, i) => (
@@ -253,27 +253,42 @@ export default function Home() {
 
         {/* Contact Section */}
         <section id="contact" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20">
-          <h3 className="text-3xl sm:text-4xl md:text-5xl font-black text-gray-900 dark:text-white mb-8 sm:mb-12 italic text-center">
+          <h3 className="text-3xl sm:text-4xl md:text-5xl font-black text-gray-900 dark:text-white mb-12 sm:mb-16 italic text-center">
             GET IN TOUCH
           </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 text-center">
-            <div>
-              <h4 className="text-lg sm:text-xl md:text-2xl font-black text-gray-900 dark:text-white mb-2 sm:mb-4">📍 LOCATION</h4>
-              <p className="text-sm sm:text-base md:text-lg text-gray-600 dark:text-gray-400">123 Main Street<br/>Your City, ST 12345</p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 mb-10">
+            {/* Location Card */}
+            <div className="bg-gray-100 dark:bg-gray-800 rounded-2xl p-8 shadow-lg hover:shadow-xl transition">
+              <div className="text-5xl mb-4">📍</div>
+              <h4 className="text-xl sm:text-2xl font-black text-gray-900 dark:text-white mb-4">LOCATION</h4>
+              <p className="text-sm sm:text-base text-gray-700 dark:text-gray-300">D R K Raju Township, Near Gvp college road, Ashta Lakshmi Temple road, Kommadi,<br/> Visakhapatnam, Andhra Pradesh 530048</p>
             </div>
-            <div>
-              <h4 className="text-lg sm:text-xl md:text-2xl font-black text-gray-900 dark:text-white mb-2 sm:mb-4">📞 PHONE</h4>
-              <p className="text-sm sm:text-base md:text-lg text-gray-600 dark:text-gray-400">(555) 123-4567<br/>Mon-Sun: 8am - 6pm</p>
+
+            {/* Phone Card */}
+            <div className="bg-gray-100 dark:bg-gray-800 rounded-2xl p-8 shadow-lg hover:shadow-xl transition">
+              <div className="text-5xl mb-4">📞</div>
+              <h4 className="text-xl sm:text-2xl font-black text-gray-900 dark:text-white mb-4">PHONE</h4>
+              <p className="text-sm sm:text-base text-gray-700 dark:text-gray-300">7981697309<br/>Mon-Sun: 8am - 8pm</p>
             </div>
-            <div>
-              <h4 className="text-lg sm:text-xl md:text-2xl font-black text-gray-900 dark:text-white mb-2 sm:mb-4">✉️ EMAIL</h4>
-              <p className="text-sm sm:text-base md:text-lg text-gray-600 dark:text-gray-400">info@luxurycarwash.com</p>
+
+            {/* Email Card */}
+            <div className="bg-gray-100 dark:bg-gray-800 rounded-2xl p-8 shadow-lg hover:shadow-xl transition">
+              <div className="text-5xl mb-4">✉️</div>
+              <h4 className="text-xl sm:text-2xl font-black text-gray-900 dark:text-white mb-4">EMAIL</h4>
+              <p className="text-sm sm:text-base text-gray-700 dark:text-gray-300">info@luxurycarwash.com</p>
             </div>
           </div>
-          <div className="mt-8 sm:mt-12 text-center">
-            <button className="bg-red-600 hover:bg-red-700 text-white font-black py-3 sm:py-4 px-8 sm:px-12 text-sm sm:text-lg rounded transition transform hover:scale-105">
+
+          {/* CTA Button */}
+          <div className="text-center">
+            <a
+              href="https://wa.me/917981697309"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-red-600 hover:bg-red-700 text-white font-black py-4 px-10 sm:px-16 text-base sm:text-lg rounded-lg transition transform hover:scale-105 shadow-lg hover:shadow-xl"
+            >
               BOOK YOUR APPOINTMENT
-            </button>
+            </a>
           </div>
         </section>
       </main>
